@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="img/covidIcon.png" rel="shortcut icon" />
+    <title>Covid-19 Tracker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@600&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/all.min.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+
+<body>
+    <div class="dark-layer"></div>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="layer"></div>
+        <div class="container">
+            <a class="navbar-brand hvr-pulse-shrink" href="#"><img src="img/covid19Logo.png" alt="logo"><span
+                    class="trackerlogo">Tracker</span></a>
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <ul class="list-of-countries list-ustyled">
+            </ul>
+        </div><!-- /.container-fluid -->
+    </nav>
+    <!--End Navbar-->
+    <div class="text-center pages-container custom-font">
+        <span data-active="map" class="page map active-page"><i class="fas fa-globe" style="font-size: 20px;
+            float: left;
+            margin-right: -10px;"></i>Map</span>
+        <span data-active="statistics" class="page statistics"><i class="fas fa-chart-bar" style="font-size: 20px;
+            float: left;
+            margin-right: 2px;"></i>Statistics</span>
+    </div>
+    <div id="map">
+        <aside class="all-over-world text-center">
+            <div class="custom-font">
+                <h2 class="no-mrgn-tp"><i class="fas fa-globe-asia" style="
+                    color: #e6514b;
+                    margin-right: 5px;"></i><span>All Over The World</span></h2>
+                <hr class="hr-world">
+                <p class="world-statis text-center">
+                    <i class="fas fa-hospital stats-icon" style="font-size: 19px;"></i>
+                    <span class="data-name">Confirmed Cases</span>
+                    <span class="all all-cases"></span>
+                </p>
+                <p class="world-statis text-center">
+                    <img width="25" src="img/recovered.png" class="stats-icon">
+                    <span class="data-name">Recovered</span>
+                    <span class="all all-recovered"></span>
+                </p>
+                <p class="world-statis text-center">
+                    <img width="25" src="img/death.png" class="stats-icon">
+                    <span class="data-name">Mortality</span>
+                    <span class="all all-deaths"></span>
+                </p>
+            </div>
+        </aside>
+        <div id="regions_div" class="text-center"></div>
+    </div>
+    <div id="statistics">
+        <div class="first-chart" style="width: 100%">
+            <div id="piechart"></div>
+            <br>
+            <br>
+            <table id="stats-table" class='stats-table main-table text-center table' style="color: white;">
+                <tr>
+                    <td>Country</td>
+                    <td>Confirmed Cases</td>
+                    <td>Recovered</td>
+                    <td>Mortality</td>
+                </tr>
+                
+            </table>
+        </div>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

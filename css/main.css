@@ -1,0 +1,303 @@
+body,*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    background: url(../img/bg.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+::-webkit-scrollbar{
+	width:10px;
+}
+			
+::-webkit-scrollbar-track{
+	background-color: #847a8ade			
+}
+::-webkit-scrollbar-thumb{
+	background-color: #de6f73;
+}
+/* Public Rules */
+#statistics{
+    display: none;
+}
+.dark-layer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.47);
+    z-index: -1;
+}
+.trackerlogo{
+    position: relative;
+    top: -22px;
+    left: 45px;
+    color: white;
+}
+.search-btn{
+    background-color: rgb(230, 81, 75);
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+}
+.search-inpt{
+    background-color: inherit;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #b4b4b4;
+    color: white;
+}
+.search-inpt::placeholder{
+    color: #c7c7c7;
+}
+.no-mrgn-tp{
+    margin-top: 0!important;
+}
+.custom-font{
+    font-family: 'Baloo Paaji 2', cursive;
+}
+/* End Public Rules */
+/* Start Edit Bootstrap */
+nav.navbar-default{
+    background-color: #445463;
+    border-color: #445463;
+    border-radius: 0;
+    margin: 0;
+}
+.navbar-brand{
+    padding-top: 1px;
+}
+/* End Edit Bootstrap */
+/* Start Nav */
+.search-box{
+    float: right;
+    padding-top: 10px;
+    margin-right: 40px;
+}
+.list-of-countries{
+    position: absolute;
+    top: 36px;
+    right: 12.9%;
+    text-align: center;
+    z-index: 9;
+    width: 170px;
+    max-height: 300px;
+    background-color: #d85d62;
+    color: white;
+    font-weight: bold;
+    overflow: auto;
+    display: none;
+}
+.list-of-countries li{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 1px;
+    background-color: #c14e49;
+    cursor: pointer;
+}
+.list-of-countries li:hover{
+    background-color: #d85d62;
+}
+.bars{
+    position: relative;
+    width: 50px;
+    height: 26px;
+    right: 20px;
+    top: 7px;
+    color: white;
+    cursor: pointer;
+}
+.bars .custom-bar{
+    border-radius: 3px;
+    position: absolute;
+    font-size: 22px;
+    right: 0;
+    height: 5px;
+    padding: 1px;
+    background-color: #dcd5d5;
+}
+.custom-bars-one{
+    width: 50px;
+}
+.custom-bars-two{
+    margin-top: 10px;
+    width: 36px;
+}
+.custom-bars-three{
+    margin-top: 20px;
+    width: 25px;
+}
+.layer{
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: #0000002b;
+    z-index: 8;
+    display: none;
+}
+#list-of-details{
+    position: fixed;
+    top: 0;
+    right: -311px;
+    background-color: #34414c;
+    width: 311px;
+    height: 100%;
+    list-style: none;
+    z-index: 9;
+}
+/* End Nav */
+/* Start Page Container */
+.pages-container{
+    height: 50px;
+    background-color: rgba(99, 117, 136, 0.47);
+    backdrop-filter: blur(8px);
+    color: white;
+    padding-top: 8px;
+}
+.pages-container .page{
+    background-color: rgb(142, 156, 169);
+    margin: -2px;
+    padding:8px ;
+    width: 100px;
+    font-weight: bold;
+    display: inline-block;
+    cursor: pointer;
+}
+.active-page{
+    background-color: rgb(230, 81, 75) !important;
+}
+/* End Page Container */
+/* Satart Aside */
+.all-over-world{
+    padding-top: 10px;
+    width: 25%;
+    height: 100%;
+    background-color: rgba(99, 117, 136, 0.47);
+    backdrop-filter: blur(8px);
+    display: inline-block;
+    position: absolute;
+}
+.all-over-world h2{
+    color: white;
+}
+.hr-world{
+    margin: 20px;
+    border-top: 4px solid rgb(84, 113, 140);
+}
+.world-statis{
+    padding-top: 4px;
+    margin-right: 15%;
+    margin-left: 15%;
+    background-color: white;
+    font-weight: bold;
+}
+.world-statis .all{
+    display: block;
+    margin-top: 4px;
+    padding: 10px;
+    border-top: 1px solid #c6c6c6;
+    background-color: #e9e9e9;
+    font-size: 20px;
+    color: #e95047;
+    font-weight: bold;
+    box-shadow: inset 0 5px 8px rgb(207, 206, 206);
+    -webkit-box-shadow: inset 0 5px 8px rgb(207, 206, 206);
+    -moz-box-shadow: inset 0 5px 8px rgb(207, 206, 206);
+    -o-box-shadow: inset 0 5px 8px rgb(207, 206, 206);
+    -ms-box-shadow: inset 0 5px 8px rgb(207, 206, 206);
+}
+.world-statis .data-name{
+    width: 72px;
+    display: inline-block;
+}
+.world-statis .stats-icon{
+    width: 25px;
+    margin-right: 5px;
+}
+/* End Aside */
+/* Start Map */
+#regions_div{
+    position: relative;
+    width:750px;
+    height:500px;
+    margin-right: 40px;
+    float:right
+}
+#regions_div>div{
+    position: absolute !important;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* End Map */
+/* Start Core Chart */
+#piechart{
+    position: relative;
+    left: 25%;
+}
+#piechart text {
+    fill: #d2453e !important;
+    font-weight: bold;
+}
+/* End Core Chart */
+/* Start Table Of Countries */
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+    border-top: 1px solid #464646;
+    border-bottom: 1px solid #464646;
+    font-weight: bold;
+}
+/* End Table Of Countries */
+/* Start Media Query */
+@media (max-width:992px){
+    #regions_div>div{
+        left: 54%;
+        transform: translateX(-50%) scale(0.75);
+    }
+    #piechart{
+        position: relative;
+        left: -20%;
+        transform: scale(0.65) translateY(-30%);
+    }
+}
+@media (max-width:776px){
+    .all-over-world{
+        position: relative;
+        width:100%;
+    }
+    #regions_div{
+        position: static;
+        margin-right:0 ;
+    }
+    #regions_div>div{
+        transform: translateX(-50%) scale(0.5);
+    }
+    .bars .custom-bar{
+        right: -12px;
+    }
+    .search-box{
+        margin-right: 0;
+    }
+    .custom-bars-one{
+        width: 40px;
+    }
+    .custom-bars-two{
+        width: 25px;
+    }
+    .custom-bars-three{
+        width: 15px;
+    }
+    .bars .custom-bar{
+        height: 3px;
+    }
+    #list-of-details{
+        width: 50%;
+    }
+}
+/* End Media Query */
